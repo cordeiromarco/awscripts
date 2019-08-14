@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": "s3:DeleteBucket",
+            "Resource": "arn:aws:s3:::saga-backupcloud"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::saga-backupcloud/*",
+            "Condition": {}
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*",
+            "Condition": {}
+        }
+    ]
+}
