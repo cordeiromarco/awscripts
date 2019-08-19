@@ -1,0 +1,4 @@
+aws ec2 describe-security-groups --profile rjconsultores --region us-east-1 > vpc-security-groups-rjconsultores.json
+list all security groups 
+aws rds describe-db-instances --profile rjconsultores --region us-east-1 > db-instances-rjconsultores.json
+list all RDS instances
