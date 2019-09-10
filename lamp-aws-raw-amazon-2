@@ -1,6 +1,7 @@
-clear
 
+yum update -y
 yum groupinstall -y "Web Server" "MySQL Database" "PHP Support"
+yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install -y git wget
 service httpd start
 chkconfig httpd on
