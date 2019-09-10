@@ -1,12 +1,12 @@
 #! /bin/bash -ex
 yum update -y
-yum groupinstall -y "Web Server" "MySQL Database" "PHP Support"
+amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install -y git wget
-service httpd start
-chkconfig httpd on
-groupadd www
-usermod -a -G www ec2-user
+yum install -y httpd mariadb-server
+systemctl start httpd
+systemctl enable httpd
+usermod -a -G apache ec2-user
 chown -R ec2-user:apache /var/www
 chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
