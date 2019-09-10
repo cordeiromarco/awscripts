@@ -1,4 +1,5 @@
-yum update -y
+clear
+
 yum groupinstall -y "Web Server" "MySQL Database" "PHP Support"
 yum install -y git wget
 service httpd start
