@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     now = datetime.now()
 
 	# AWS Account ID    
-	account_id = '1234567890'
+	account_id = "1234567890"
     
     # Define retention period in days
     retention_days = 10
