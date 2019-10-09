@@ -26,7 +26,7 @@ def lambda_handler(event, context):
     #oldest_datetime = datetime.date.today() - datetime.timedelta(days=event['retention_days'])
 
 	# AWS Account ID
-    account_id = "731735707548"
+    account_id = "1234567"
 
     # Define retention period in days
     retention_days = 30
