@@ -75,12 +75,12 @@
             "Effect": "Allow",
             "Action": "elasticbeanstalk:*",
             "Resource": [
-                "arn:aws:elasticbeanstalk:us-east-1:731735707548:applicationversion/ura-visual/*",
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:applicationversion/ura-visual/*",
                 "arn:aws:elasticbeanstalk:us-east-1::platform/*",
-                "arn:aws:elasticbeanstalk:us-east-1:731735707548:configurationtemplate/ura-visual/*",
-                "arn:aws:elasticbeanstalk:us-east-1:731735707548:application/ura-visual",
-                "arn:aws:elasticbeanstalk:us-east-1:731735707548:environment/ura-visual/ura-visual-hml",
-                "arn:aws:elasticbeanstalk:us-east-1:731735707548:environment/ura-visual/ura-visual-prd"
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:configurationtemplate/ura-visual/*",
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:application/ura-visual",
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:environment/ura-visual/ura-visual-hml",
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:environment/ura-visual/ura-visual-prd"
             ]
         },
         {
