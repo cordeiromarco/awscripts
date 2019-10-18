@@ -79,11 +79,11 @@
             "Effect": "Allow",
             "Action": "elasticbeanstalk:*",
             "Resource": [
-                "arn:aws:elasticbeanstalk:us-east-1:191802734792:application/Test",
-                "arn:aws:elasticbeanstalk:us-east-1:191802734792:applicationversion/Test/*",
-                "arn:aws:elasticbeanstalk:us-east-1:191802734792:configurationtemplate/Test/*",
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:application/Test",
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:applicationversion/Test/*",
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:configurationtemplate/Test/*",
                 "arn:aws:elasticbeanstalk:us-east-1::platform/*",
-                "arn:aws:elasticbeanstalk:us-east-1:191802734792:environment/Test/Test-env"
+                "arn:aws:elasticbeanstalk:us-east-1:123456789012:environment/Test/Test-env"
             ]
         },
         {
