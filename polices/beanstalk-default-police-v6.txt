@@ -1,0 +1,107 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:RebootInstances",
+                "ec2:StartInstances",
+                "ec2:StopInstances"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:ResourceTag/Application": "URAVisual"
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "sns:*",
+                "iam:GetRole",
+                "elasticbeanstalk:DescribeAccountAttributes",
+                "iam:List*",
+                "cloudformation:*",
+                "elasticloadbalancing:*",
+                "elasticbeanstalk:CheckDNSAvailability",
+                "autoscaling:*",
+                "iam:PassRole",
+                "ec2:Describe*",
+                "s3:ListAllMyBuckets",
+                "cloudwatch:*",
+                "elasticbeanstalk:DescribeInstancesHealth",
+                "elasticbeanstalk:DescribeEnvironmentHealth",
+                "acm:ListCertificates",
+                "elasticbeanstalk:CreateStorageLocation"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucketByTags",
+                "s3:GetObjectVersionTagging",
+                "s3:ListBucketVersions",
+                "s3:RestoreObject",
+                "s3:ListBucket",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:ReplicateObject",
+                "s3:PutObject",
+                "s3:GetObjectAcl",
+                "s3:GetObject",
+                "s3:GetObjectVersionAcl",
+                "s3:GetObjectTagging",
+                "s3:GetObjectVersionForReplication",
+                "s3:DeleteObject",
+                "s3:GetBucketLocation",
+                "s3:GetObjectVersion"
+            ],
+            "Resource": [
+                "arn:aws:s3:::oidigital-uravisual",
+                "arn:aws:s3:::oidigital-uravisual/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::elasticbeanstalk-*/*",
+                "arn:aws:s3:::elasticbeanstalk-*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor4",
+            "Effect": "Allow",
+            "Action": "elasticbeanstalk:*",
+            "Resource": [
+                "arn:aws:elasticbeanstalk:us-east-1:731735707548:applicationversion/ura-visual/*",
+                "arn:aws:elasticbeanstalk:us-east-1::platform/*",
+                "arn:aws:elasticbeanstalk:us-east-1:731735707548:configurationtemplate/ura-visual/*",
+                "arn:aws:elasticbeanstalk:us-east-1:731735707548:application/ura-visual",
+                "arn:aws:elasticbeanstalk:us-east-1:731735707548:environment/ura-visual/ura-visual-hml",
+                "arn:aws:elasticbeanstalk:us-east-1:731735707548:environment/ura-visual/ura-visual-prd"
+            ]
+        },
+        {
+            "Sid": "VisualEditor5",
+            "Effect": "Deny",
+            "Action": [
+                "elasticbeanstalk:CreateApplication",
+                "elasticbeanstalk:Terminate*",
+                "elasticbeanstalk:CreatePlatformVersion",
+                "ec2:DeleteTags",
+                "elasticbeanstalk:CreateEnvironment",
+                "ec2:CreateTags",
+                "elasticbeanstalk:CreateConfigurationTemplate",
+                "elasticbeanstalk:Delete*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
