@@ -1,3 +1,0 @@
-<script>
-		for (param in location) {document.writeln (param, '', location[param])}
-</script>
