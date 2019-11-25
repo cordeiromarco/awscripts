@@ -11,7 +11,7 @@ from pprint import pprint
 
 
 credentials = boto3.Session().get_credentials()
-awsauth = AWS4Auth('AKIAJMPQMPVFIUZQBFSQ', 'GT7xXQ8LtIEztOUT1HrVGSqbdWpz6+iMKhQATVWr', 'us-east-1', 'es')
+awsauth = AWS4Auth('xxxxxxxxxxx', 'yyyyyyyyyyyyyyyyyyyyyy', 'us-east-1', 'es')
 
 ########## MAIN CODE ##########
 print ("-------------------")
