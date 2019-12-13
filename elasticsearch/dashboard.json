@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "07a61b00-a142-11e8-b234-4b18448c0234",
+    "_type": "dashboard",
+    "_source": {
+      "title": "WAF",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":3,\"w\":6,\"h\":3,\"i\":\"1\"},\"id\":\"e7c2ef40-a30b-11e8-b234-4b18448c0234\",\"type\":\"visualization\",\"version\":\"6.2.3\",\"embeddableConfig\":{\"vis\":{\"colors\":{\"BLOCK\":\"#BF1B00\"}},\"spy\":null}},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"2\"},\"id\":\"bbfa9750-a30b-11e8-b234-4b18448c0234\",\"type\":\"visualization\",\"version\":\"6.2.3\",\"embeddableConfig\":{\"vis\":{\"colors\":{\"BLOCK\":\"#BF1B00\"}},\"spy\":null}},{\"panelIndex\":\"4\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":3,\"i\":\"4\"},\"id\":\"ba2a0090-a30c-11e8-b234-4b18448c0234\",\"type\":\"visualization\",\"version\":\"6.2.3\",\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}},\"spy\":null}},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":3,\"i\":\"5\"},\"embeddableConfig\":{\"mapZoom\":1,\"mapCenter\":[21.94304553343818,-11.25]},\"id\":\"54e1ae40-a38e-11e8-b234-4b18448c0234\",\"type\":\"visualization\",\"version\":\"6.2.3\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
