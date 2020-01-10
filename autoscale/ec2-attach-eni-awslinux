@@ -1,5 +1,9 @@
 #!/bin/bash
-# Attach the ENI to the instance
+# Define variables
 REGION=$(curl -s http://169.254.169.254/latest/dynamic/instance-identity/document | grep region | awk -F\" '{print $4}')
 INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
+# Attach the ENI to the instance
 aws ec2 attach-network-interface --region $REGION --instance-id $INSTANCE_ID --device-index 1 --network-interface-id eni-0bb5a057f477b775e
+# # Attach the EBS to the instance
+aws ec2 attach-volume --region $REGION --instance-id $INSTANCE_ID --volume-id vol-042c261b669ff8a1f --device /dev/sdf
+mount --uuid 270a02e2-c95c-4dca-9610-effc8afb5394 /home
